@@ -150,7 +150,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ddfcd1e6924d3d41aa33f6dc818877f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e37aba7241dcab64f836ff16232d8f81, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -509,30 +509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9dfbd9db5c7e3408eb65a6fe0e407d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 3.1183972
-      outSlope: 3.1183972
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.03643314
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -3.0573785
-      outSlope: -3.0573785
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.040372908
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
