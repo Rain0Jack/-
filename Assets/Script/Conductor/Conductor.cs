@@ -38,7 +38,7 @@ public class Conductor : MonoBehaviour
     void Start()
     {
         //“Ù∆µ≥ı ºªØ
-        bpm = 121;
+        bpm = 120;
         float normalTime = (float)AudioSettings.dspTime;
         music.PlayScheduled(normalTime+3f);
         dsptimesong = (float)AudioSettings.dspTime;
