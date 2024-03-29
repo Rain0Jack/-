@@ -33,16 +33,19 @@ public class Conductor : MonoBehaviour
         {
             instance = this;
         }
+
+        bpm = 120;
+        crotchet = 60 / bpm;
     }
 
     void Start()
     {
         //ÒôÆµ³õÊ¼»¯
-        bpm = 120;
+        
         float normalTime = (float)AudioSettings.dspTime;
         music.PlayScheduled(normalTime+3f);
         dsptimesong = (float)AudioSettings.dspTime;
-        crotchet = 60 / bpm;
+        
         allBeatNumber = 0;
         Debug.LogWarning(AudioSettings.dspTime);
     }
@@ -52,7 +55,7 @@ public class Conductor : MonoBehaviour
     {
         //ÀÖÇúÎ»ÖÃ
         songposition = (float)(AudioSettings.dspTime - (dsptimesong+3f)) * music.pitch - offset;
-        Debug.Log(songposition);
+        //Debug.Log(songposition);
         
         if (songposition > allBeatNumber * crotchet)
         {

@@ -248,7 +248,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1837695927}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359486766
@@ -347,6 +348,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -481,6 +483,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908ba4ea074185049adff928bbc32e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TapData: []
+  TapOnJudge: []
 --- !u!1 &803053193
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,12 +658,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837695924}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.88, y: 2.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 250712109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1925874287
 GameObject:
@@ -747,10 +763,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubes:
-  - {fileID: 803053195}
-  - {fileID: 359486768}
-  - {fileID: 2046823556}
-  - {fileID: 1837695926}
+  - {fileID: 803053193}
+  - {fileID: 359486766}
+  - {fileID: 2046823554}
+  bounceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 2.2222223
+      outSlope: 2.2222223
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.05625
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.43181813
+      outSlope: 0.43181813
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.27499998
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2046823554
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,5 +883,4 @@ SceneRoots:
   - {fileID: 803053196}
   - {fileID: 359486769}
   - {fileID: 2046823557}
-  - {fileID: 1837695927}
   - {fileID: 250712109}
